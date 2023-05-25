@@ -60,7 +60,28 @@
   h1 {
     margin-top: 0;
   }
+  
+div.gal {
+  box-sizing:border-box;
+  margin:0px;
+  padding:0px;
+}
 
+.galeria {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px, 1fr));
+  width:100%;
+  margin:auto;
+  grid-gap:60px;
+  padding: 40px 0px;
+}
+
+.galeria img {
+  width:100%;
+  vertical-align:top;
+  height:400px;
+  object-fit:contain;
+}
   section {
     max-width: 800px;
     margin: 0 auto;
@@ -104,3 +125,4 @@ padding-right: 25%;
 width: 50%;
 height: auto;
 }
+
